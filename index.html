@@ -1,0 +1,80 @@
+<!--Hecha por:Joselyn Navarro Ramos-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moonlight | Registration</title>
+	<meta charset="utf-8">
+  <!--Es para definir el tipo de contenido al que se enlaza-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<!--Se coloca el estilo float left para ver en que dirección estará la imagen que se adjuntó, en este caso la de nuestro logo-->
+    <p style="float: left;"><img src="logo.png"  width="200" height="78"></p>
+    <h1>WELCOME TO THE MOONLIGHT</h1>
+    <nav>
+  	    <ul>
+  	    	<a>Register and access to see these incredible books that we have for you</a>
+  	    </ul>
+    </nav>
+    <div class="contenido">
+            <div class="articulos">
+                <div class="secciones">
+            <div>
+            	<p>Who's accessing this site?<br><br>
+                  <script type="text/javascript">
+
+                //Función que se llama a través del botón "bookrecommendations"
+                function obten()
+             {
+                //se obtienen los datos atraves de getElementById
+                //se realizan variables para cada pregunta
+                var Nm=document.getElementById("Name").value;
+                var Nn=document.getElementById("Nickname").value;
+                var Fb=document.getElementById("Favoritebook").value;
+                    var genre=document.getElementById("Favoritegenre").value;
+
+                    //alert para que muestre tu nombre(Nm) y apodo(Nn)
+                    alert("welcome "+Nn+"  "+"("+Nm+")");
+                }
+         
+                  </script>
+                 
+          <form id="info">
+            <label>Name:</label>
+            <input type="text" id="Name" placeholder="Insert your name">
+        <br>
+            <label>Nickname:</label>
+            <input type="text" id="Nickname" placeholder="Insert your nickname">
+        <br>
+            <label>Favorite book:</label>
+            <input type="text" id="Favoritebook" placeholder="Insert your favorite book">
+        <br>
+            <label>Favorite Genre:</label>
+            <input type="text" id="Favoritegenre" placeholder="Insert your favorite genre">
+         </form>
+                      <!--Botón que te lleva a nuestra página una vez iniciado sesión-->
+                      <br>
+                      <a href="menu_daec.html">
+                     <input type="button"  onclick="obten()" value="log in" style="color: gray ; width:100px;height:30px;"></a>
+                    
+            </div>
+                </div>
+            </div>             
+             <div class="menu-secundario">
+
+              <!--Redes sociales-->
+
+            <center><h>Follow us in</h></center><br>                
+            <a href="https://www.instagram.com/patriciaatr_/"><img src="Instagram_logo.png"  width="30" height="38"></a>
+            <a href="https://www.facebook.com/patricia.tamayo.18062/"><img src="Facebook_logo.png"  width="30" height="38"></a>
+            <a href="https://www.tiktok.com/@patriciatr_"><img src="Tiktok_logo.png"  width="30" height="38"></a>
+
+             	<br>     	    
+            </div>
+    </div>
+      <footer>
+        <!--Frase-->
+      	    <p>Among my advisers, books are the ones I like best, because neither fear nor hope prevents them from telling me what to do.<br>-Alfonso V el Magnánimo. </p>
+      </footer> 
+</body>
+</html>

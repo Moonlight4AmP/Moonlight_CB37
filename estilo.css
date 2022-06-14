@@ -1,0 +1,109 @@
+/*Moonligth*/
+/*Ángel Patricia Tamayo Rojo*/
+/*Grupo: 4AMPR*/
+/*02/06/22*/
+/*Objetivo: El diseño de nuestra página*/
+
+*{ 
+	/*el espacio entre el contenido del elemento y su borde*/
+	padding: 0;
+	/*el margen*/
+	margin: 0;
+ }
+/*Parte donde va el titulo de bienvenida*/
+h1{ 
+	/*posicion del texto*/
+ 	text-align: center;
+ 	/*color del fondo del texto*/
+ 	background-color: white;
+ 	/*color del texto*/
+ 	color: black;
+ 	/*el espacio*/
+ 	padding: 20px;
+}
+/*Parte donde van los 4 generos literarios escojidos, el cuestionario y la información de nosotras*/
+nav ul{ 
+    /*color del fondo del texto*/
+	background-color: gray;
+	/*ancho del texto*/
+	width: 100%;
+	/*Para no mostrar ningún marcador en una lista de elementos, se utiliza el valor none*/
+	list-style-type: none;
+	/*posición del texto*/
+	text-align: center;	
+}
+nav li{ 
+	/*Flexbox permite ubicar elementos dentro de un contenedor*/
+    display: inline-flex;
+}
+nav a{ 
+	/*text-decoration permite que el texto sea decorado mediante una de cinco propiedades: underline (subrayado), 
+	overline (línea superior), line-through (tachado), blink (parpadeo), o la por defecto none (ninguna).*/
+     text-decoration: none;
+     /*color del texto*/
+     color: white;
+     /*el espacio*/
+     padding: 10px;
+     /*ancho del texto*/
+     width: 150px;
+}
+/*Parte del movimiento de cuando se escoje una sección, esta va de color negro*/
+nav li:hover { 
+	/*color del movimiento*/
+     background-color: black;
+
+}
+/*Donde va el el saludo al lector*/
+.contenido{
+	/*nos permite maquetar nuestras páginas web*/
+	display: flex;
+	/*margen*/
+	margin: 60px;	
+}
+/*La separación de donde vendrán nuestras redes sociales*/
+.articulos{
+	/*ancho*/
+	width:  80%;
+	/*borde de la linea*/
+	border-right: 3px solid black;	
+}
+/*Diseño de donde va el saludo al lector y lo del curso*/
+.secciones{
+	/*nos permite maquetar nuestras páginas web*/
+	display: flex;
+	align-items: center;
+	padding: 40px
+}
+/*Diseño de las imagenes de las redes sociales*/
+.menu-secundario{
+	/*ancho*/
+	width: 20%;
+	/*margen superior*/
+	margin-top: 60px;
+}
+.menu-secundario a{
+	/*dar una anchura al elemento*/
+	display: block;
+	/*posicion de las imagenes*/
+	text-align: center;
+}
+/*Diseño de la parte donde se colocó la frase y fecha*/
+footer{
+	/*ancho*/
+	width: 100%;
+	/*altura*/
+	height: 300px;
+	/*color del fondo*/
+	background-color: gray;
+	/*color de la letra*/
+	color: white;
+	/*margen superior*/
+	margin-top: 10px;
+}
+footer p{
+	/*posicion del texto*/
+	text-align: center;
+	/*espacio*/
+	padding: 80px;
+}
+

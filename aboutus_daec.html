@@ -1,0 +1,108 @@
+<!--Moonligth-->
+<!--Ángel Patricia Tamayo Rojo-->
+<!--Grupo: 4AMPR-->
+<!-- 02/06/22-->
+<!--Objetivo: Un programa donde se realice una página para recomendar libros-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moonlight | About us</title>
+    <!--Es para definir el tipo de contenido al que se enlaza-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+  <script type="text/javascript">
+      // función que muestra un alert al usuario.
+      function warning()
+      {
+       alert("The page you want to open contains some sensitive content.")
+      }
+    </script>
+</head>
+<body>
+    <p style="float: left;"><img src="logo.png"  width="200" height="78"></p>
+    <h1>WELCOME TO THE MOONLIGHT</h1>
+    <nav>
+  	    <ul>
+          <!--Es para la división de las secciones que se presentan en la página-->
+          <!--El <li> es para citar, numerar y definir cosas.-->
+  	    	<li><a href="menu_daec.html">Menu</a></li>
+  	    	<li><a href="fantasy_daec.html">Fantasy</a></li>
+  	    	<li><a href="romance_daec.html">Romance</a></li>
+  	    	<li><a href="thriller_daec.html"onclick="warning()">Thriller</a></li>
+  	    	<li><a href="fiction_daec.html">Fiction</a></li>
+  	    	<li><a href="questionnaire_daec.html">Questionnaire</a></li>
+  	    	<li><a href="aboutus_daec.html">About us?</a></li>
+  	    </ul>
+    </nav>
+    <!--El estilo de cada clase creada viene en el archivo de css-->
+    <!--La clase llamada "contenido" es para la parte donde viene nuestra intruducción y saludo al lector-->
+    <div class="contenido">
+          <!--La clase llamada "articulos" es para el diseño que es una línea, esta sirve de separación para colocar nuestras redes sociales-->   
+            <div class="articulos">
+              <!--La clase llamada "seccione" es para también un poco del diseño  donde viene nuestra intruducción y saludo al lector-->
+                <div class="secciones">
+            <div>
+            	      <!--Texto sobre la historia de Moonlight-->
+                    <h1>Moonlight Association – Who are we?</h1><br>
+                    <p>
+
+                    In the Moonlight we've gathered a group of book lovers, passionate about their ability to touch souls.  Because of that, we dedicate ourselves to promote human, familiar, spiritual and educational values through books, taking them in a critical and passionate way. In little words, we make reference to our motto: Thinking about reading, changing the world.<br><br>
+
+                    It's clear that reading is a form of entertainment, but we don't commune to it with the idea of a simple and hollow amusement. Nothing to far from reality, in fact, do you remember that made you look at the world with a different  perspective?, or that book that inspired you to treat others more nicely?, or that another book where you found an irresistible character that made you think "I want to be like that"?.<br><br>
+
+                    Reading can create dreams and portray ideals, enriching the espectator and the society that goes through the pages. The crazy ones that conform Moonlight hang on to this cultural scene  and guide ourselves with an idea, as simple as it is, has a big impact: We believe that the world can go in better ways, if us, the people who live in it change our hearts.<br><br>
+
+                    <h2>Our history</h2><br>
+
+                    Moonlight was born in 2022 when a group of reading and writing amateurs decided to share what they know to the world.<br><br>
+
+                    Currently, our president is Patricia Tamayo, writer, reader and programming student; and our vice president is Rechel Medina, who is a programming and music student.<br><br>
+
+                    The directors of the reading and writing departments in America are Valeria Sanchez and Joselyn Navarro.<br><br>
+
+                    The Moonlight project has been growing thanks to the selfless collaboration of many people, with their voluntary dedication of time and professionalism, or with economical support.<br><br>
+
+                    To all of them, we want to express our most sincere gratitude, just like all of our subscribers, and to you, who is reading this lines in our website. All of you are, equally, Moonlight.<br><br>
+
+
+                    </p>
+            </div>
+                </div>
+            </div>             
+             <div class="menu-secundario">
+
+             <!--Imagenes de las redes sociales centradas-->
+
+            <center><h>Follow us in</h></center><br>                
+            <a href="https://www.instagram.com/patriciaatr_/"><img src="Instagram_logo.png"  width="30" height="38"></a>
+            <a href="https://www.facebook.com/patricia.tamayo.18062/"><img src="Facebook_logo.png"  width="30" height="38"></a>
+            <a href="https://www.tiktok.com/@patriciatr_"><img src="Tiktok_logo.png"  width="30" height="38"></a>
+
+             	<br>     	    
+            </div>
+    </div>
+    <!--Parte que está hasta lo último de la página-->
+      <footer>
+        <!--Frase motivadora-->
+      	    <p>"That´s the thing about books. They let you travel without moving your feet".<br>-Jhumpa Lahiri.</p>
+      	<!--Se abre el js-->
+        <center><script type="text/javascript">
+
+          //Mostrar la fecha y hora de cuando se entra
+
+		function mostrar_fecha()
+		{
+      //se obtienen los datos atraves de getElementById
+			var cl=document.getElementById("fecha");
+			cl.innerHTML = new Date();
+		}
+		</script>
+
+  		<div id="fecha"></div>
+		<script type="text/javascript">
+			mostrar_fecha();
+			setInterval(mostrar_fecha, 1000);
+		</script>
+		</center>
+      </footer> 
+</body>
+</html>

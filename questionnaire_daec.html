@@ -1,0 +1,258 @@
+<!--Grupo: 4AMPR-->
+<!--Objetivo de la página: trivia para las personas que ya hayan leido los libros mencionados-->
+<!--Pagina realizada por:Rechel María Medina Gutiérrez-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- en esta etiqueta de style, se les da diseño a los componentes del programa, como botones, inputs, parrafos, etc.-->
+		<style>
+			/*Para el estilo de las opciones de las preguntas*/
+			p{
+				color: black;
+				font-size: 20px;
+				line-height: 30px;
+			}
+			/*Para el estilo de los botones*/
+			button{
+				background-color: gray;
+				border: 3px;
+				border-radius: 5px;
+				font-size: 20px;
+				line-height: 30px;
+			}
+            div:{
+                font-size: 20px;
+                line-height: 30px;
+      }
+		</style>
+		<meta charset="utf-8">
+		<title>Moonlight | Questionnaire</title>
+		  <link rel="stylesheet" type="text/css" href="estilo.css">
+		  <script type="text/javascript">
+      // función que muestra un alert al usuario.
+      function warning()
+      {
+       alert("The page you want to open contains some sensitive content.")
+      }
+    </script>
+		  <p style="float: left;"><img src="logo.png"  width="200" height="78"></p><h1>WELCOME TO THE MOONLIGHT</h1>
+    <nav>
+  	    <ul>
+  	    	<li><a href="menu_daec.html">Menu</a></li>
+  	    	<li><a href="fantasy_daec.html">Fantasy</a></li>
+  	    	<li><a href="romance_daec.html">Romance</a></li>
+  	    	<li><a href="thriller_daec.html"onclick="warning()">Thriller</a></li>
+  	    	<li><a href="fiction_daec.html">Fiction</a></li>
+            <li><a href="questionnaire_daec.html">Questionnaire</a></li>
+            <li><a href="aboutus_daec.html">About us?</a></li>
+  	    </ul>
+    </nav>
+		<br><center><font color="black"><h3>How much do you know about the books you read?</h3><br></font></center>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+    //Pregunta 1 sobre el libro de Harry Potter
+      //se define una funcion que es la que valida si la respuesta es correcta, una función por pregunta
+      function pregunta1(){
+      	       // en este if else, se obtienen los datos desde el formulario
+      	        //si el valor es veredadero, se mostrara en div la palabra correcto, en color verde
+      	        if (document.getElementById('lugar1').checked==true){
+					document.getElementById('r1').innerHTML="Correcto";
+					document.getElementById('r1').style.color="green";
+				}
+				// en cambio, si no lo fue, sera mostrada la palabra Incorrecto en color rojo
+				else{
+					document.getElementById('r1').innerHTML="Incorrecto";
+					document.getElementById('r1').style.color="red";
+				}
+			}
+	//Pregunta 2 sobre el libro de Harry Potter
+	  function pregunta2(){
+	  	      if (document.getElementById('privet').checked==true){
+					document.getElementById('r2').innerHTML="Correcto";
+					document.getElementById('r2').style.color="green";
+				}
+				else{
+					document.getElementById('r2').innerHTML="Incorrecto";
+					document.getElementById('r2').style.color="red";
+				}
+			}	
+	
+	//Pregunta 3 sobre el libro de Pride and prejuice
+	   function pregunta3(){
+				//Evalua por medio del id si el valor es true, en caso de ser así, escribirá en el div "Correcto", en cualquier otro caso, escribirá "Incorrecto". Así será con las siguiente pregunta.
+				
+				if (document.getElementById('si').checked==true){
+					//abajo escribe la palabra correcto en el div correspondiente a la pregunta
+					document.getElementById('r3').innerHTML="Correcto";
+					// la segunda se encarga de dar color
+					document.getElementById('r3').style.color="green";
+				}
+				else{
+					document.getElementById('r3').innerHTML="Incorrecto";
+					document.getElementById("r3").style.color="red";
+				}
+			}
+	
+	//Pregunta 4 sobre el libro de Pride and prejuice.
+	    function pregunta4(){
+	  	        if (document.getElementById('first').checked==true){
+					document.getElementById('r4').innerHTML="Correcto";
+					document.getElementById('r4').style.color="green";
+				}
+				else{
+					document.getElementById('r4').innerHTML="Incorrecto";
+					document.getElementById('r4').style.color="red";
+				}
+			}	
+	
+	//Pregunta 5 sobre el libro de sadie	
+	    function pregunta5(){
+	  	        if (document.getElementById('mattie').checked==true){
+					document.getElementById('r5').innerHTML="Correcto";
+					document.getElementById('r5').style.color="green";
+				}
+				else{
+					document.getElementById('r5').innerHTML="Incorrecto";
+					document.getElementById('r5').style.color="red";
+				}
+			}	
+	
+	//Pregunta 6 sobre el libro de sadie
+	    function pregunta6(){
+	  	        if (document.getElementById('old13').checked==true){
+					document.getElementById('r6').innerHTML="Correcto";
+					document.getElementById('r6').style.color="green";
+				}
+				else{
+					document.getElementById('r6').innerHTML="Incorrecto";
+					document.getElementById('r6').style.color="red";
+				}
+			}			
+	
+	//Pregunta 7 sobre el libro de The Great Gatsby
+
+	    function pregunta7(){
+	            if (document.getElementById('nop').checked==true){
+					document.getElementById('r7').innerHTML="Correcto";
+					document.getElementById('r7').style.color="green";
+				}
+				else{
+					document.getElementById('r7').innerHTML="Incorrecto";
+					document.getElementById("r7").style.color="red";
+				}
+			}
+	
+	//Pregunta 8 sobre el libro de The Great Gatsby
+        function pregunta8(){
+	            if (document.getElementById('nick').checked==true){
+					document.getElementById('r8').innerHTML="Correcto";
+					document.getElementById('r8').style.color="green";
+				}
+				else{
+					document.getElementById('r8').innerHTML="Incorrecto";
+					document.getElementById("r8").style.color="red";
+				}
+			}
+		</script>
+	
+	<div class="main">
+			
+		<h4><font color=#4B4E4E>Harry Potter(Fiction)</h4>
+		    <p><h><br>Question 1: In the movie, who gives Harry his Hogwarts acceptance letter?</h><br></p>
+		    <p><input type="radio" name="place" id="lugar">Owl
+		    <br>
+		    <input type="radio" name="place" id="lugar1">Hagrid
+		    <br>
+			<input type="radio" name="place" id="lugar2">Dumbledore
+			<br><p>
+			<b><div id=r1></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta1()">Validate response</button>
+
+		    <p><h><br>Question 2: Where does Harry Potter live with his family?</h><br></p>
+		    <p><input type="radio" name="house" id="burrow">In the Burrow
+		    <br>
+		    <input type="radio" name="house" id="grimmauld">In Grimmauld Place
+		    <br>
+			<input type="radio" name="house" id="privet">Privet Drive
+			<br><p>
+			<b><div id=r2></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta2()">Validate response</button>
+            <br>
+            <br>
+       
+        <h4><font color=#4B4E4E>Pride and Prejudice(Romance)</h4>
+		    <p><h><br>Question 3: There were 5 sisters in the bennet family?</h><br></p>
+		    <p><input type="radio" name="opcion radio" id="si">Si
+		    <br>
+			<input type="radio" name="opcion radio" id="no">No
+			<br></p><p>
+			<b><div id=r3></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta3()">Validate response</button>
+
+		    <p><h><br>Question 4: What is the first name the author gives you?</h><br></p>
+		    <p><input type="radio" name="name" id="first">First impressions
+		    <br>
+		    <input type="radio" name="name" id="pride">Pride
+		    <br>
+			<input type="radio" name="name" id="love">First love
+			<br><p>
+			<b><div id=r4></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta4()">Validate response</button>
+			<br>	
+            <br>
+		
+		<h4><font color=#4B4E4E>Sadie(Thriller)</h4>
+		    <p><h><br>Question 5: What is the name of sadie's sister?</h><br></p>
+		    <p><input type="radio" name="sister" id="jen">Jen
+		    <br>
+		    <input type="radio" name="sister" id="mattie">Mattie
+		    <br>
+			<input type="radio" name="sister" id="lili">Lili
+			<br><p>
+			<b><div id=r5></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta5()">Validate response</button>
+
+		    <p><h><br>Question 6: How old was Mattie?<br></h></p>
+		    <p><input type="radio" name="old" id="old13">13
+			<br>
+		    <input type="radio" name="old" id="old19">19
+		    <br>
+			<input type="radio" name="old" id="old16">16
+			<br><p>
+			<b><div id=r6></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta6()">Validate response</button>
+            <br>
+            <br>
+		
+		<h4><font color=#4B4E4E>The Great Gatsby(Fiction)</h4>
+		    <p><h><br>Question 7: Is Gatsby's mansion in Brooklyn?</h><br></p>
+		    <p><input type="radio" name="opcion radio" id="sii">Si
+		    <br>
+			<input type="radio" name="opcion radio" id="nop">No
+			<br></p>
+			<b><div id=r7></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta7()">Validate response</button>
+
+		    <p><h><br>Question 8: Where does Gatsby’s reunion with Daisy take place?</h><br></p>
+		    <p><input type="radio" name="reunion" id="nick">At Nick’s house
+		    <br>
+		    <input type="radio" name="reunion" id="golf">At the golf tournament
+		    <br>
+			<input type="radio" name="reunion" id="pool">By the pool
+			<br><p>
+			<b><div id=r8></div></b>
+			<!-- aqui se llama a la funcion que se creo anteriormente para que el boton califique la respuesta-->
+			<button onclick="pregunta8()">Validate response</button>
+			</div>
+			
+		</body>
+</html>
